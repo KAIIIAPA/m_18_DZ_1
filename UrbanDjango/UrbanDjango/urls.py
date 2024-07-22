@@ -19,6 +19,7 @@ from django.urls import path
 from task2.views import ct, ft
 # from task3.views import platform, comics, basket
 from task4.views import platform, comics, basket
+from task5.views import sign_up_by_django, sign_up_by_html
 
 
 urlpatterns = [
@@ -28,4 +29,6 @@ urlpatterns = [
     path('platform/', platform),
     path('platform/comics/', comics),
     path('platform/basket/', basket),
+    path('django_sign_up/', sign_up_by_django),
+    path('', sign_up_by_html)
 ]
